@@ -284,7 +284,7 @@ public class MoviesApiTest {
             throw new AssertionError("Отсутствует поле error в JSON");
         }
 
-        assertEquals("Not Found" , errorResponse.getError());
+        assertEquals("Not Found", errorResponse.getError());
         assertFalse(errorResponse.getDetails().isEmpty());
     }
 }
